@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"os"
 	"path/filepath"
 	"strings"
 	"sync"
@@ -15,7 +15,7 @@ var (
 )
 
 func fileSearch(root string, filename string) {
-	files, err := ioutil.ReadDir(root)
+	files, err := os.ReadDir(root)
 	if err != nil {
 		fmt.Println(err)
 	}
