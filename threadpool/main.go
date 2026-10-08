@@ -57,7 +57,7 @@ func main() {
 
 	wg.Add(numberOfThreads)
 	start := time.Now()
-	for _, line := range strings.Split(text, "\n") {
+	for line := range strings.SplitSeq(text, "\n") {
 		inputChannel <- line
 	}
 	close(inputChannel)
