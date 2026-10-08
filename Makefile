@@ -1,4 +1,4 @@
-.PHONY: boid filesearch winddirection
+.PHONY: boid filesearch winddirection threadpool
 
 boid:
 	go -C ./boid-simulation run .
@@ -8,3 +8,6 @@ filesearch:
 
 winddirection:
 	go -C ./winddirection run .
+
+threadpool:
+	go -C ./threadpool run .
