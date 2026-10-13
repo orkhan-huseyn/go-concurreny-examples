@@ -1,4 +1,4 @@
-.PHONY: boid filesearch winddirection threadpool
+.PHONY: boid filesearch winddirection threadpool matrixmult
 
 boid:
 	go -C ./boid-simulation run .
@@ -11,3 +11,6 @@ winddirection:
 
 threadpool:
 	go -C ./threadpool run .
+
+matrixmult:
+	go -C ./matrixmult run .
